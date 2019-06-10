@@ -778,3 +778,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 461ms (Views: 445.2ms | ActiveRecord: 0.6ms)
 
 
+Started POST "/posts" for 47.16.138.138 at 2019-06-10 01:22:32 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bp8HMf9NW5RFGLDQKhJQWDy2brZu7brSCP/ug4qGmwz2DhrX5VyN1y373jijFem6lAQr5YSRKL4klHWmJRz7vw==", "title"=>"qwe", "description"=>"qwqr", "commit"=>"Submit Post"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/posts_controller.rb:34:in `post_params'
+app/controllers/posts_controller.rb:16:in `create'
